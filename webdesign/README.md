@@ -28,14 +28,14 @@ Example :
 ![Alt Text](images/story.gif)
 
 
-OBS: If possible, avoid using Bootstrap, but it will be a great differential if you use the [Scss version of the bootstrap 4+](https://getbootstrap.com/docs/4.0/getting-started/theming/).
+OBS: Will be a great differential if you use the [Scss version of the bootstrap 4+](https://getbootstrap.com/docs/4.0/getting-started/theming/).
 
 ## Differentials
 
 - Indented code is a pleasure to look at;
 - Using [Bootstrap 4+ SCSS Version](https://getbootstrap.com/docs/4.0/getting-started/theming/)
 - Never use images wider than 1920px (unless this is really necessary or specified);
-- You can use Pug to create static pages, but if you use React.js it will be a big differential
+- You can use Pug to create static pages, but if you use React.js it will be a big differential;
 - Effects and animations will receive bonus points;
 - SVG Animations of shapes;
 - WebGL Animations with Three.js or Babylon.js;
