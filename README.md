@@ -2,7 +2,7 @@
 # Joyjet Tech Interview
 
 Thank you for coming to our tech-interview test page. Come and help us build game changing apps and platforms for international clients!
-[Joyjet](http://joyjet.com) was created 16 years ago in Paris and is now looking to grow it's team with highly skilled individuals! Today we are based in Paris (France) and Fortaleza (Brazil), and our teams speak five major languages.
+[Joyjet](http://joyjet.com) was created nearly 20 years ago in Paris and is now looking to grow it's team with highly skilled individuals! Today we are based in Paris (France) and Fortaleza (Brazil), and our teams speak five major languages.
 
 ## Guidelines
 
