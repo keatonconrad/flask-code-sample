@@ -11,7 +11,7 @@ This is a test to analyze knowledge in FrontEnd development, using specifics res
 
 ## Features
 
-- Develop a ** Quiz ** application using React;
+- Develop a ** Quiz ** application using React/VueJs/Angular depending on the role you are applying for;
 - The user can register a quiz, questions and answers;
 - A quiz may have several questions;
 - A question may have several answers;
