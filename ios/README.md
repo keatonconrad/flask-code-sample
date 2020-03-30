@@ -10,7 +10,7 @@ As you can see in file "App Diagram.png", the test consists of developing a prot
 - [Duplicate](https://help.github.com/articles/duplicating-a-repository/) this repository (do **not** fork it)
 - Resolve your test;
 - [JSON](https://cdn.joyjet.com/tech-interview/mobile-test-one.json) to load by request;
-- Layout is in Sketch and PDF.
+- Layout is in Sketch and PDF. Or you can find it here with all measures and files: https://www.figma.com/file/8364HvmSmcjrGpigxMJUmO/joyjet-apptest-ios?node-id=0%3A1
 
 ## Features
 
