@@ -3,7 +3,7 @@
 - Please solve the levels in ascending order
 - Try to complete all levels
 
-## We lovely to see:
+## We would love to see:
 
 - Clean structure
 - Clean code
