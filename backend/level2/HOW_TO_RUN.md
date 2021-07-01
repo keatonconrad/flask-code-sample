@@ -1,4 +1,4 @@
-# Level 1 Solution
+# Level 2 Solution
 
 ## Explanation
 
