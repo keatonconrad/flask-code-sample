@@ -10,6 +10,11 @@ def test_200_response(client, input_data):
     assert response.status_code == 200
 
 
+def test_get_method_not_allowed(client):
+    response = client.get('/')
+    assert response.status_code == 405
+
+
 def test_total_is_int(client, input_data):
     response = client.post('/', json=input_data)
     data = response.get_json()
@@ -20,7 +25,7 @@ def test_total_is_int(client, input_data):
 def assert_missing_data(client, data):
     """
     A helper function that posts the given data to the payload to the '/'
-    endpoint and asserts that data is missing.
+    endpoint and asserts a 400 status code and that data is missing.
     Args:
         client - the flask app testing client
         data - the data to be sent to the '/' endpoint
