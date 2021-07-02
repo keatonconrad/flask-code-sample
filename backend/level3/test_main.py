@@ -22,7 +22,7 @@ def test_total_is_int(client, input_data):
         assert type(cart['total']) == int
 
 
-def assert_missing_data(client, data):
+def assert_400_and_missing_data(client, data):
     """
     A helper function that posts the given data to the payload to the '/'
     endpoint and asserts a 400 status code and that data is missing.
@@ -39,30 +39,30 @@ def assert_missing_data(client, data):
 
 def test_missing_articles(client, input_data):
     data = {k: v for k, v in input_data.items() if k != 'articles'}
-    assert_missing_data(client, data)
+    assert_400_and_missing_data(client, data)
 
 
 def test_missing_carts(client, input_data):
     data = {k: v for k, v in input_data.items() if k != 'carts'}
-    assert_missing_data(client, data)
+    assert_400_and_missing_data(client, data)
 
 
 def test_missing_delivery_fees(client, input_data):
     data = {k: v for k, v in input_data.items() if k != 'delivery_fees'}
-    assert_missing_data(client, data)
+    assert_400_and_missing_data(client, data)
 
 
 def test_missing_discounts(client, input_data):
     data = {k: v for k, v in input_data.items() if k != 'discounts'}
-    assert_missing_data(client, data)
+    assert_400_and_missing_data(client, data)
 
 
 def test_missing_data(client):
     data = {}
-    assert_missing_data(client, data)
+    assert_400_and_missing_data(client, data)
 
 
 def test_too_few_carts(client, input_data):
     data = {k: v for k, v in input_data.items() if k != 'carts'}
     data['carts'] = []
-    assert_missing_data(client, data)
+    assert_400_and_missing_data(client, data)
