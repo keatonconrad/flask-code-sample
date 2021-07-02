@@ -58,8 +58,6 @@ def test_missing_data(client):
 
 
 def test_too_few_carts(client, input_data):
-    data = {
-        'articles': input_data['articles'],
-        'carts': []
-    }
+    data = {k: v for k, v in input_data.items() if k != 'carts'}
+    data['carts'] = []
     assert_missing_data(client, data)
