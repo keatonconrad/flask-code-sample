@@ -3,6 +3,7 @@ import math
 
 app = Flask(__name__)
 
+
 @app.route('/', methods=['POST'])
 def main():
     data = request.get_json()
@@ -45,3 +46,7 @@ def main():
         })
 
     return output, 200
+
+
+if __name__ == '__main__':
+    app.run()

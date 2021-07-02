@@ -15,8 +15,7 @@ Please install Flask using the following command:
 
 To run the web server:
 
-    export FLASK_APP=main.py
-    python3 -m flask run
+    python3 main.py
 
 The server will be running on http://localhost:5000
 
