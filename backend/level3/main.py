@@ -14,7 +14,7 @@ def main():
     if not all(key in data for key in required_data) or len(data['carts']) < 1:
         return {'message': 'Missing data'}, 400
 
-    output = []
+    output = {'carts': []}
 
     for cart in data['carts']:
         total = 0
@@ -39,9 +39,9 @@ def main():
                 total += fee['price']
                 break
 
-        output.append({
+        output['carts'].append({
             'id': cart['id'],
             'total': math.floor(total)
         })
 
-    return {'carts': output}, 200
+    return output, 200

@@ -15,7 +15,7 @@ def main():
     # Creates a mapping of the article ids to their respective prices for easier
     # access later
     article_id_to_price = {x['id']: x['price'] for x in data['articles']}
-    output = []
+    output = {'carts': []}
 
     for cart in data['carts']:
         total = sum(article_id_to_price[item['article_id']] * item['quantity']
@@ -28,9 +28,9 @@ def main():
                 total += fee['price']
                 break
 
-        output.append({
+        output['carts'].append({
             'id': cart['id'],
             'total': total
         })
 
-    return {'carts': output}, 200
+    return output, 200
